@@ -63,7 +63,7 @@ The following resources are getting deployed:
     <img src="https://raw.githubusercontent.com/jmenne/azd-routingdemo/refs/heads/main/demoguide/screenshots/Peerings2-Screenshot.png" alt="Peering Settings from Central-VNet" style="width:70%;">
     <br><br>
 
-3. Use **Network Watcher | Connection troubleshoot** for the testing the connection between NVA-VM and Production-VM1
+3. Use **Network Watcher | Connection troubleshoot** for testing the connection between NVA-VM and Production-VM1
 
     | Field | Value |
     | --- | --- |
@@ -109,8 +109,8 @@ The following resources are getting deployed:
 
     To do it manually:
 
-    * For the Route-to-VNet2 choose the **Destination type: IP Address** and the **Destination IP addresses: 10.2.0.0/16**
-    * For the Route-to-VNet1 choose the **Destination type: IP Address** and the **Destination IP addresses: 10.1.0.0/16**
+    * For the Route-to-VNet2 choose the **Destination type: IP Addresses** and the **Destination IP addresses: 10.2.0.0/16**
+    * For the Route-to-VNet1 choose the **Destination type: IP Addresses** and the **Destination IP addresses: 10.1.0.0/16**
     * Use the **Next hop type: Virtual appliance** and the **Next hop address: 10.0.1.4** for the Routes.
     * Associate the Route Tables to **Subnet1** of **production-VNet1** or **production-VNet2**
 
