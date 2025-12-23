@@ -93,7 +93,7 @@ This will delete the resource group and all contained resources.
 
 ## 🤝 Contributing
 
-Interested in contributing your template to the catalog? See [CONTRIBUTING.md](CONTRIBUTING.md) and the [catalog contribution guide](https://microsoftlearning.github.io/trainer-demo-deploy/docs/contribute).
+Interested in contributing your template to the catalog? See the [catalog contribution guide](https://microsoftlearning.github.io/trainer-demo-deploy/docs/contribute).
 
 ## 📄 License
 
