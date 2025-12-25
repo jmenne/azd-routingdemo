@@ -63,21 +63,56 @@ The following resources are getting deployed:
     <img src="https://raw.githubusercontent.com/jmenne/azd-routingdemo/refs/heads/main/demoguide/screenshots/Peerings2-Screenshot.png" alt="Peering Settings from Central-VNet" style="width:70%;">
     <br><br>
 
-3. Use **Network Watcher | Connection troubleshoot** for testing the connection between NVA-VM and Production-VM1
+Use **Network Watcher | Connection troubleshoot** for testing the connection between NVA-VM and Production-VM1
 
-    | Field | Value |
-    | --- | --- |
-    | Source type           | **Virtual machine** |
-    | Virtual machine       | **NVA-VM** |
-    | Destination type      | **Select a virtual machine** |
-    | Virtual machine       | **Production-VM1** |
-    | Preferred IP Version  | **Both**            |
-    | Protocol              | **TCP**             |
-    | Destination port      | **3389**            |
-    | Source port           | *Blank*             |
-    | Diagnostic tests      | *Defaults*          |
+<table>
+    <thead>
+        <tr>
+            <th>Field</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Source type</td>
+            <td><strong>Virtual machine</strong></td>
+        </tr>
+        <tr>
+            <td>Virtual machine</td>
+            <td><strong>NVA-VM</strong></td>
+        </tr>
+        <tr>
+            <td>Destination type</td>
+            <td><strong>Select a virtual machine</strong></td>
+        </tr>
+        <tr>
+            <td>Virtual machine</td>
+            <td><strong>Production-VM1</strong></td>
+        </tr>
+        <tr>
+            <td>Preferred IP Version</td>
+            <td><strong>Both</strong></td>
+        </tr>
+        <tr>
+            <td>Protocol</td>
+            <td><strong>TCP</strong></td>
+        </tr>
+        <tr>
+            <td>Destination port</td>
+            <td><strong>3389</strong></td>
+        </tr>
+        <tr>
+            <td>Source port</td>
+            <td><em>Blank</em></td>
+        </tr>
+        <tr>
+            <td>Diagnostic tests</td>
+            <td><em>Defaults</em></td>
+        </tr>
+    </tbody>
+</table>
 
-    This **Connectivity test** should show **Reachable**.
+This **Connectivity test** should show **Reachable**.
 
 4. Repeat the Network Watcher test from Production-VM1 to Production-VM2. Because you have not deployed any Routing tables, this time the test should show **Unreachable**.
 
